@@ -62,6 +62,15 @@
                                     <rect key="frame" x="16" y="277" width="287" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpX-8X-LVE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="131" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -71,6 +80,7 @@
                                 <exclude reference="BaV-cy-T7p"/>
                                 <exclude reference="t9d-GQ-KEo"/>
                                 <exclude reference="hRd-i3-lJ2"/>
+                                <exclude reference="lpX-8X-LVE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -80,12 +90,14 @@
                                 <include reference="BaV-cy-T7p"/>
                                 <include reference="t9d-GQ-KEo"/>
                                 <include reference="hRd-i3-lJ2"/>
+                                <include reference="lpX-8X-LVE"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="buttonSendMail" destination="BaV-cy-T7p" id="zzb-w3-i6o"/>
                         <outlet property="labelMessage" destination="t9d-GQ-KEo" id="OC2-kg-KqT"/>
+                        <outlet property="labelName" destination="lpX-8X-LVE" id="EdG-uU-RzR"/>
                         <outlet property="textEnterMessage" destination="hRd-i3-lJ2" id="rSN-Up-cA4"/>
                         <outlet property="textEnterName" destination="aYv-yM-S7j" id="StJ-7p-XYp"/>
                     </connections>
@@ -103,6 +115,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ioQ-xT-MFW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kpy-oO-ytN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="feG-7O-FPB">
